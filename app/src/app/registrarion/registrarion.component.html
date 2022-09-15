@@ -1,0 +1,13 @@
+<p>registrarion works!</p>
+<input type="text" [(ngModel)]="name">
+<button (click)="register()" class="btn btn-primary">register</button>
+<br><br>
+<ol>
+    <li *ngFor="let name of names; let i = index">
+        {{name}}
+        <button (click)="deleteEach(i)">deleteEach</button>
+    </li>
+</ol>
+<button (click)="delete()" class="btn btn-primary">Delete</button>
+<button (click)="deleteAll()" class="btn btn-primary">Delete all</button>
+

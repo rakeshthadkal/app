@@ -1,0 +1,66 @@
+<p>data-binding works!</p>
+<p>my name is {{ name }}</p>
+<p>My age is {{ age }}</p>
+<p>from India: {{isIndia}}</p>
+<p *ngFor="let phone of phones">{{phone}}</p>
+<ul>
+    <li *ngFor="let course of course">{{course}}</li>
+</ul>
+
+<h3>My name is  {{user.name}}; i am from {{user.city}}</h3>
+<p>name: {{student.name}}</p>
+<p>id: {{student.id}}</p>
+<p>marks:{{student.marks}}</p>
+<!-- name : string
+    id: string
+    companyName : string
+    package: number
+    location: string
+    disgnation : string -->
+
+<h1>employees data</h1>
+<p>name: {{employee.name}}</p>
+<p>id: {{employee.id}}</p>
+<p>companyName: {{employee.companyName}}</p>
+<p>package: {{employee.package}}</p>
+<p>location: {{employee.location}}</p>
+<p>disgnation: {{employee.disgnation}}</p>
+
+<br>
+<br><b>
+<p *ngFor="let user of users">
+    name: {{user.name}}
+    city: {{user.city}}
+</p></b>
+<br><br>
+<table border="1">
+    <thead>
+        <tr><th>Name</th>
+        <th>City</th></tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+    <td>{{user.name}}</td>
+    <td>{{user.city}}</td></tr>
+    </tbody>
+</table>
+<br><br><br>
+<table border="1">
+    <thead>
+        <tr><th>Name</th>
+        <th>id</th>
+    <th>Marks</th></tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+    <td>{{student.name}}</td>
+    <td>{{student.id}}</td>
+    <td>{{student.marks}}</td></tr>
+    </tbody>
+</table>
+
+
+
+
+
+

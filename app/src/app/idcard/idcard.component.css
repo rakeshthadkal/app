@@ -1,0 +1,10 @@
+#box {
+  height: 200px;
+  width: 300px;
+  border: 1px solid red;
+ font-size: 13px ;
+ border-radius: 10px;
+  background-color: white;
+  overflow: auto; 
+  margin: 30px;
+}

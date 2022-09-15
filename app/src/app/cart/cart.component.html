@@ -1,0 +1,25 @@
+<p>cart works!</p>
+<label>name</label>
+<input type="text" [(ngModel)]="name">
+<label>price</label>
+<input type="text" [(ngModel)]="price">
+<label>quntity</label>
+<input type="text" [(ngModel)]="quantity">
+
+<button class="btn btn-primary" (click)="add()">ok</button>
+<table class="table table hover">
+    <thead><tr>
+        <th>name</th>
+        <th>price</th>
+        <th>quntity</th>
+    </tr></thead>
+    <tbody>
+        <tr *ngFor="let product of products; let i = index">
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.quantity}}</td>
+            <td><button (click)="delete(i)">del</button></td>
+
+        </tr>
+    </tbody>
+</table>

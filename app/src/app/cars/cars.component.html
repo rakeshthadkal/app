@@ -1,0 +1,14 @@
+<p>cars works!</p>
+<label>Company:</label>
+<input type="radio" name="car" value="honda" [(ngModel)]="car">
+<label>Honda</label>
+<input type="radio" name="car" value="bmw" [(ngModel)]="car">
+<label>BMW</label>
+<input type="radio" name="car" value="audi" [(ngModel)]="car">
+<label>AUDI</label>
+<br><br> 
+ <img *ngIf="car=='honda'" src="/assets/dd.jpg" alt="" height="50%" width="50%" >
+<img *ngIf="car=='bmw'" src="/assets/gg.jpg" alt="" height="50%" width="50%">
+<img *ngIf="car=='audi'" src="/assets/qq.jpg" alt="" height="50%" width="50%">
+ <marquee>{{message}}</marquee>
+ 

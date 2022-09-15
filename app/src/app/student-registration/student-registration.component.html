@@ -1,0 +1,11 @@
+<p>student-registration works!</p>
+<h1>Event Registration</h1>
+<input type="text" [(ngModel)]="name">
+    <button (click)="register()" class="btn btn-primary"> Register</button>
+    <ol>
+        <li *ngFor="let name of names">{{name}}</li>
+        <button (click)="deleteAll()" class="btn btn-primary">Delete all</button>
+    </ol>
+
+    <button (click)="delete()" class="btn btn-primary">Delete</button>
+    

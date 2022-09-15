@@ -1,0 +1,30 @@
+.parent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.child1 {
+  width: 25%;
+  height: 180vh;
+  background-color: rgba(23,31,44,255);
+}
+.child2 {
+  overflow: auto;
+  width: 85%;
+  height: 100%;
+  padding-left: 10px;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  color: greenyellow;
+  margin: 10px;
+}
+.logout{
+    display: flex;
+    justify-content: center;
+}
+h3 :hover{
+  color: rgb(254, 74, 3);
+
+}

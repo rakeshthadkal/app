@@ -1,0 +1,19 @@
+div :hover{
+ border: solid 2px green;}
+
+label{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+div{
+   border: solid 1px;
+
+}
+input{
+    margin-left: 50px;
+}
+
+.unvisited {
+  font-weight: bold;
+}

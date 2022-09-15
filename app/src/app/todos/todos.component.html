@@ -1,0 +1,34 @@
+<!-- 
+<table>
+    <thead>
+        <tr>
+            <th>userId</th>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Completed</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let todos of todoss" >
+            <td><input type="checkbox"></td>
+            <td>{{todos.userId}}</td>
+            <td>{{todos.id}}</td>
+            <td>{{todos.title}}</td>
+            <td>{{todos.completed}}</td>
+[ngClass]="{'visited': todos.completed==true, 'unvisited': todos.completed ==false}" </td>
+</tr>
+    </tbody>
+</table> -->
+
+<div
+  *ngFor="let todos of todoss"
+  [ngClass]="{
+    visited: todos.completed == true,
+    unvisited: todos.completed == false
+  }"
+>
+  <input type="checkbox" />
+  <label>{{ todos.userId }}</label>
+  <label>{{ todos.id }}</label>
+  <label> {{ todos.title }} </label>
+</div>

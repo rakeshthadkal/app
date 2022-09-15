@@ -1,0 +1,32 @@
+.parent{
+ height: 100vw;
+ width: 100vw;
+ background-color: yellowgreen;  
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.abc{
+    border: 1px solid rgb(12, 8, 8);
+    height: 300px;
+    width: 250px;
+    justify-content: center;
+   
+}
+.signin{
+    display: flex;
+    justify-content: center;
+}
+.forgot{
+    display: flex;
+    justify-content: center;
+}
+input{
+    margin: 5px;
+    padding: 5px;
+    text-align: right;
+    border-radius: 35;
+}
+label{
+    text-align: center;
+}

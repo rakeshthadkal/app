@@ -1,0 +1,83 @@
+<p>create-user works!</p>
+<form [formGroup]="userForm">
+  <label>name</label>
+  <input type="text" formControlName="name" />
+  <br />
+  <div class="error" *ngIf="userForm.get('name')?.touched && userForm.get('name')?.invalid">
+    <p *ngIf="userForm.get('name')?.errors?.['required']">name is required</p>
+    <p *ngIf="userForm.get('name')?.errors?.['minlength']">
+      Minimum three charecter required
+    </p>
+    <p *ngIf="userForm.get('name')?.errors?.['maxlength']">
+      maximum 10 charecter required
+    </p>
+  </div>
+  <label>age</label>
+  <input formControlName="age" />
+    <div class="error" *ngIf="userForm.get('age')?.touched && userForm.get('age')?.invalid">
+        <p *ngIf="userForm.get('age')?.errors?.['required']">must required</p>
+    <p *ngIf="userForm.get('age')?.errors?.['min']">min o required</p>
+    <p *ngIf="userForm.get('age')?.errors?.['max']">max 120
+      Minimum three charecter required</p>
+  <br /></div>
+  <br>
+<div class=""></div>
+
+  <label>phone</label>
+  <input formControlName="phone" />
+   <div class="error" *ngIf="userForm.get('phone')?.touched && userForm.get('phone')?.invalid">
+    <p *ngIf="userForm.get('phone')?.errors?.['required']">phone numbers required</p>
+    <p *ngIf="userForm.get('phone')?.errors?.['min']">phone number must contain min 10 degit
+    </p>
+    <p *ngIf="userForm.get('phone')?.errors?.['max']">phone number must contain max 10 degit</p>
+<br /><br /></div>
+
+  <div formGroupName="address">
+    <label>State</label>
+    <input formControlName="State" />
+    <br /><br />
+    <label>pin</label>
+    <input formControlName="pin" />
+  </div>
+
+  <div formArrayName="cards">
+    <div *ngFor="let card of cardsFormArry.controls; let i = index">
+      <div formGroupName="'{{ i }}">
+        <label>number</label>
+        <input type="text" formControlName="number" />
+        <label>Expiry</label>
+        <input type="month" formControlName="Expiry" />
+        <label>cvv</label>
+        <input type="text" formControlName="cvv" />
+      </div>
+    </div>
+  </div>
+  <br /><br />
+
+  <button (click)="add()">add kart</button><br /><br />
+  <button (click)="submit()">Sign In</button>
+
+
+
+<label>Payment type : upi Payment</label>
+  <input type="radio" name="payment" formControlName="paymentType">
+ 
+  <label>Card payment</label>
+  <input type="radio" name="payment" formControlName="paymentType"><br>
+  <label>UPI Id</label>
+  <input type="text"  />
+  <br>
+  <label>Card No</label>
+  <input type="text" ><br>
+  <button (click)="submit">sumbit</button>
+
+  <div *ngIf="userForm.get('paymentType')?.value=='upi'">
+    <label>UPI id:</label>
+    <input type="text" formControlName="upiId">
+  </div>
+  <div *ngIf="userForm.get('paymentType')?.value=='card'">
+    <label>Card No:</label>
+    <input type="text" formControlName="cardNo">
+    
+  </div>
+  </form>

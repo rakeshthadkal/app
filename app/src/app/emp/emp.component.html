@@ -1,0 +1,29 @@
+<p>emp works!</p>
+<label>Name</label>
+<input  type="text" [(ngModel)]="name"><br>
+<label>age</label>
+<input type="text"><br [(ngModel)]="age">
+<label [(ngModel)]="company">company</label>
+<input type="text"><br>
+<label>package</label>
+<input type="text" [(ngModel)]="company">
+<button class="btn btn-primary" (click)="register()">Resigtration</button>
+
+
+
+
+<table border="1">
+    <thead>
+        <th>name</th>
+        <th>age</th>
+        <th>company</th>
+        <th>package</th>
+        <th>Delete</th>
+    </thead>
+    <tr *ngFor="let emp of emp"></tr>
+    <td>{{name}}</td>
+    <td>{{age}}</td>
+    <td>{{company}}</td>
+    <td>{{package}}</td>
+
+</table>
