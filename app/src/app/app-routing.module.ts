@@ -4,6 +4,8 @@ import { AuthGuard } from './auth.guard';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CarsComponent } from './cars/cars.component';
 import { CartComponent } from './cart/cart.component';
+import { CartlistComponent } from './cartlist/cartlist.component';
+import { ChildComponent } from './child/child.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -16,16 +18,21 @@ import { HomeComponent } from './home/home.component';
 import { IdcardComponent } from './idcard/idcard.component';
 import { ItemComponent } from './item/item.component';
 import { LoginComponent } from './login/login.component';
+import { NavComponent } from './nav/nav.component';
 import { NotifyGuard } from './notify.guard';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ParentComponent } from './parent/parent.component';
+import { ProductComponent } from './product/product.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { RegistrarionComponent } from './registrarion/registrarion.component';
 import { SquareComponent } from './square/square.component';
 import { SqureComponent } from './squre/squre.component';
+import { StarComponent } from './star/star.component';
 import { StudentRegistrationComponent } from './student-registration/student-registration.component';
 import { TodoComponent } from './todos/todos.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { TypiComponent } from './typi/typi.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 
 const routes: Routes = [
@@ -52,8 +59,10 @@ const routes: Routes = [
       { path: 'cart', component: CartComponent },
       { path: 'emp', component: EmpComponent },
       { path: 'cars', component: CarsComponent },
-      {
-        path: 'create-vehicle',
+      {path: 'star', component: StarComponent},
+      {path: 'vehicle-details/:id', component:VehicleDetailsComponent},
+      
+        {path: 'create-vehicle',
         component: CreateVehicleComponent,
         canDeactivate: [NotifyGuard],
       },
@@ -62,6 +71,11 @@ const routes: Routes = [
       { path: 'todos', component: TodoComponent },
       { path: 'idcard', component: IdcardComponent },
       { path: 'create-user', component: CreateUserComponent },
+      {path: 'parent', component: ParentComponent},
+      {path: 'child', component: ChildComponent},
+      {path: 'cartlist', component: CartlistComponent},
+      {path: 'product', component: ProductComponent},
+      {path: 'nav', component: NavComponent}
     ],
   },
   { path: '', component: LoginComponent },

@@ -34,6 +34,13 @@ import { UserComponent } from './user/user.component';
 import { IdcardComponent } from './idcard/idcard.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { StarComponent } from './star/star.component';
+import { ProductComponent } from './product/product.component';
+import { NavComponent } from './nav/nav.component';
+import { CartlistComponent } from './cartlist/cartlist.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +73,14 @@ import { CreateUserComponent } from './create-user/create-user.component';
     UserComponent,
     IdcardComponent,
     CreateVehicleComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    ParentComponent,
+    ChildComponent,
+    StarComponent,
+    ProductComponent,
+    NavComponent,
+    CartlistComponent,
+    VehicleDetailsComponent
   ],
 
   imports: [
