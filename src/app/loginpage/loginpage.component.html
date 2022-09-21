@@ -1,0 +1,31 @@
+<p>loginpage works!</p>
+<div>
+  <form [formGroup]="LoginForm">
+    <h2>Login</h2>
+
+    <label>username</label><br />
+    <input type="text" formControlName="username" />
+    <br />
+    <label for="password">Password</label><br />
+    <input
+      type="password"
+      placeholder=" Enter Password"
+      formControlName="password"
+    />
+    <div
+      class="error"
+      *ngIf="
+        LoginForm.get('password')?.touched && LoginForm.get('password')?.invalid
+      "
+    >
+      <p *ngIf="LoginForm.get('password')?.errors?.['required']">
+        Password is required
+      </p>
+      <p *ngIf="LoginForm.get('password')?.errors?.['pattern']">
+        Password contains Min 8 numbers
+      </p>
+    </div>
+    <br><br>
+    <button (click)="submit()">Submit</button>
+  </form>
+</div>

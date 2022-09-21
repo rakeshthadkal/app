@@ -1,0 +1,33 @@
+label{
+    
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+button{
+    border-radius: 10px;
+    
+}
+
+div{
+      justify-content: center;
+    margin-top: 50px;
+    align-content: center;
+    display: flex;
+}
+h2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    background-color: gray;
+    font-weight: bold;
+    border-radius: 30px;
+}

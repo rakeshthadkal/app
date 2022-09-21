@@ -1,0 +1,22 @@
+.parent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: aquamarine;
+}
+.child1 {
+  width: 40vh;
+  height: 100vh;
+  background-color: green;
+  margin: 20px;  
+}
+
+button{
+  margin: 35px;
+}
+
+h3{
+color: orange;
+margin: 20px;
+}
+
