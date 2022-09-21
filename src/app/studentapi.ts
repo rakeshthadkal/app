@@ -5,8 +5,6 @@ export interface Studentapi {
   mobile: number;
   email: string;
   batch: string;
-  address:{ 
-  city: string;
-  mandal: string
+  
 }
-]} 
+
